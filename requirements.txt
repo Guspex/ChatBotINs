@@ -1,0 +1,21 @@
+# ORACULO/UDESC — Dependências do projeto
+# Instale com: pip install -r requirements.txt
+
+# ── Banco de dados ──────────────────────────────────────────
+psycopg2-binary>=2.9.9          # Driver PostgreSQL (inclui binários — sem compilação)
+
+# ── HTTP / API Ollama ───────────────────────────────────────
+httpx>=0.27.0                   # Cliente HTTP async-first (usado para Ollama)
+
+# ── Extração de texto de PDFs ───────────────────────────────
+pdfplumber>=0.10.0              # Extração de texto de PDFs (usa pdfminer internamente)
+
+# ── Scraping da página de INs ───────────────────────────────
+beautifulsoup4>=4.12.0          # Parser HTML para scraper_udesc.py
+lxml>=5.2.0                     # Backend rápido para BeautifulSoup
+
+# ── Variáveis de ambiente ───────────────────────────────────
+python-dotenv>=1.0.0            # Carrega .env automaticamente
+
+# ── Utilitários ─────────────────────────────────────────────
+# Nenhuma dependência adicional — uuid, hashlib, re, datetime são stdlib Python

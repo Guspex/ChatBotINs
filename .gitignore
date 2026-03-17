@@ -1,0 +1,45 @@
+# ── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ── Ambiente virtual ────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Variáveis de ambiente (NUNCA versionar) ─────────────────
+.env
+*.env.local
+
+# ── PDFs e dados de ingestão (arquivos grandes) ─────────────
+ingestion/pdfs/
+ingestion/logs/
+
+# ── Logs ────────────────────────────────────────────────────
+*.log
+logs/
+
+# ── IDEs ────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Pytest / Coverage ───────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── mypy / ruff ─────────────────────────────────────────────
+.mypy_cache/
+.ruff_cache/
